@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="src_dawerHeaderView" format="reference"></attr>
+    <attr name="src_ic_about_us" format="reference"></attr>
+    <attr name="src_toolbar_bg" format="reference|color"></attr>
+    <attr name="src_cardview_bg" format="color"></attr>
+    <attr name="src_drawerList_bg" format="reference"></attr>
+    <attr name="src_SmartTabLayout" format="reference"></attr>
+    <attr name="src_PagerSlidingTabStrip" format="reference"></attr>
+    <attr name="src_LinearLayout_bg" format="color"></attr>
+    <attr name="src_other_activity_bg" format="color"></attr>
+    
+    <attr name="text_article_title" format="color"></attr>
+    <attr name="text_article_subtitle" format="color"></attr>
+
+</resources>

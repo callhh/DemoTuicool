@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/src_other_activity_bg"
+    tools:context="com.example.tuicool.SetShareActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbar" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="18dp" >
+
+                <RelativeLayout
+                    android:id="@+id/layout1_setShare_weibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="?attr/src_LinearLayout_bg" >
+
+                    <com.sevenheaven.iosswitch.ShSwitchView
+                        xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/switch_view_setShare_weibo"
+                        android:layout_width="62dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        shSwitch:shadowSpace="7dip"
+                        shSwitch:tintColor="#ffff4e00" />
+
+                    <TextView
+                        android:id="@+id/tv_setShare_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@+id/img_setShare_weibo"
+                        android:text="尚未授权"
+                        android:textColor="?attr/text_article_title"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_setShare_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/share_sina_weibo" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2_setShare_weixin"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/src_LinearLayout_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_setShare_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@+id/img_setShare_weixin"
+                        android:text="尚未授权"
+                        android:textColor="?attr/text_article_title"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_setShare_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/share_weixin" />
+
+                    <com.sevenheaven.iosswitch.ShSwitchView
+                        xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/switch_view_setShare_weixin"
+                        android:layout_width="62dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        shSwitch:shadowSpace="7dip"
+                        shSwitch:tintColor="#ffff4e00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout3_setShare_qq_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/src_LinearLayout_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_setShare_qq_zone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@+id/img_setShare_qq_zone"
+                        android:text="尚未授权"
+                        android:textColor="?attr/text_article_title"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_setShare_qq_zone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/share_qq_zone" />
+
+                    <com.sevenheaven.iosswitch.ShSwitchView
+                        xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/switch_view_setShare_qq_zone"
+                        android:layout_width="62dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        shSwitch:shadowSpace="7dip"
+                        shSwitch:tintColor="#ffff4e00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout4_setShare_douban"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/src_LinearLayout_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_setShare_douban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@+id/img_setShare_douban"
+                        android:text="尚未授权"
+                        android:textColor="?attr/text_article_title"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_setShare_douban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/share_douban" />
+
+                    <com.sevenheaven.iosswitch.ShSwitchView
+                        xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/switch_view_setShare_douban"
+                        android:layout_width="62dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        shSwitch:shadowSpace="7dip"
+                        shSwitch:tintColor="#ffff4e00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout5_setShare_evernote"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/src_LinearLayout_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_setShare_evernote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@+id/img_setShare_evernote"
+                        android:text="尚未授权"
+                        android:textColor="?attr/text_article_title"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_setShare_evernote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/share_evernote" />
+
+                    <com.sevenheaven.iosswitch.ShSwitchView
+                        xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/switch_view_setShare_evernote"
+                        android:layout_width="62dip"
+                        android:layout_height="38dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        shSwitch:shadowSpace="7dip"
+                        shSwitch:tintColor="#ffff4e00" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

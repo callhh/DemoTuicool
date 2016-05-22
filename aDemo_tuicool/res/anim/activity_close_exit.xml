@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:duration="300">
+<!--     当前页面原地不动 -->
+    <translate
+        android:duration="300"
+        android:fromXDelta="0.0%p"
+        android:toXDelta="0.0%p" />
+    
+<!--     当前页面从右往左滑动消失 -->
+<!--         <translate -->
+<!--         android:duration="700" -->
+<!--         android:fromXDelta="0.0%p" -->
+<!--         android:toXDelta="-100.0%p" /> -->
+
+</set>

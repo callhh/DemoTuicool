@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TuiCool</string>
+    <string name="main_activity">首页</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_layout_summary">This activity illustrates the use of sliding drawers. The
+        drawer may be pulled out from the starting edge, which is left on left-to-right locales,
+        with an edge swipe. If this demo is running on Ice Cream Sandwich or newer you may tap the
+        icon at the starting side of the action bar to open the drawer as well.</string>
+    <string name="drawer_title">Navigation</string>
+
+    <!-- Description of the icon that opens the navigation drawer, used by accessibility. -->
+    <string name="drawer_open">Open navigation drawer</string>
+
+    <!-- Description of the icon that closes the navigation drawer, used by accessibility. -->
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hot_detail">HotDetailActivity</string>
+    <string name="title_activity_article_url">ArticleUrlActivity</string>
+    <string name="select_dialog">字体大小(当前是中等):</string>
+    <string name="title_activity_my_favor">MyFavorActivity</string>
+    <string name="title_activity_my_tui_cool">MyTuiCoolActivity</string>
+    <string name="title_activity_my_tui_kan">MyTuiKanActivity</string>
+    <string name="my_tuikan_text">"推刊"是登陆用户专享功能。你可以把收藏的文章保存到特定推刊，以方便后续回顾阅读。同时，制作的推刊也可被他人订阅。收藏到推酷，从登陆开始。</string>
+    <string name="title_activity_settins">SettinsActivity</string>
+
+    <string-array name="textsize_choose">
+        <item>最小</item>
+        <item>偏小</item>
+        <item>中等</item>
+        <item>偏大</item>
+        <item>最大</item>
+    </string-array>
+
+    <string name="share">分享</string>
+	<!--     weibo授权  begin     -->
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_token_to_string_format">Token：%1$s \nRefresh Token：%2$s \nexpires_in：%3$s</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <!--     weibo授权  end       -->
+    
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_my_wait_read">MyWaitReadActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Welcome sliding page Text -->
+    <string name="welcom_head_01">Spreadsheets on the go</string>
+    <string name="welcom_content_01">Get stuff done with or without an internet connection.</string>
+    <string name="welcom_head_02">Share and edit together</string>
+    <string name="welcom_content_02">Write on your own or invite more people to contribute.</string>
+    <string name="welcom_head_03">Automatically save to the web</string>
+    <string name="welcom_content_03">Never lose your progress, so you can keep working from any computer or device.</string>
+    <string name="welcom_head_04">Edit Excel spreadsheets</string>
+    <string name="welcom_content_04">Open, edit, and save Excel files - all within Sheets.</string>
+    <string name="title_activity_set_share">SetShareActivity</string>
+    <string name="title_activity_yi_jian_fan_kui">YiJianFanKuiActivity</string>
+    <string name="title_activity_ti_jiao_fan_kui">TiJiaoFanKuiActivity</string>
+    <string name="title_activity_upgrade_log">UpgradeLogActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_off_line_read">OffLineReadActivity</string>
+
+</resources>

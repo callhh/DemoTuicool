@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim_foreground_disabled_material_dark"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/button_layout"
+        android:background="#33ffffff"/>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        >
+
+        <LinearLayout
+            android:id="@+id/circles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="立即进入>>"
+            android:textSize="18sp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:background="@drawable/selectable_item_background_general"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selectable_item_background_general"
+            android:gravity="center"
+            android:text="跳过"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selectable_item_background_general"
+            android:gravity="center"
+            android:paddingBottom="22dp"
+            android:paddingTop="22dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_next" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

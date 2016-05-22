@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/src_other_activity_bg"
+    tools:context="com.example.tuicool.LoginActivity" >
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@id/imageView1"
+        android:layout_width="170.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8.0dip"
+        android:src="?attr/src_ic_about_us" />
+
+    <EditText
+        android:id="@id/editTextuseremail"
+        android:layout_width="270.0dip"
+        android:layout_height="42.0dip"
+        android:layout_below="@id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4.0dip"
+        android:background="?attr/src_LinearLayout_bg"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="邮箱"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@id/editTextpass"
+        android:layout_width="270.0dip"
+        android:layout_height="42.0dip"
+        android:layout_alignLeft="@id/editTextuseremail"
+        android:layout_alignRight="@id/editTextuseremail"
+        android:layout_below="@id/editTextuseremail"
+        android:layout_marginTop="10.0dip"
+        android:background="?attr/src_LinearLayout_bg"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+         />
+
+    <LinearLayout
+        android:id="@id/login_layout"
+        android:layout_width="220.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextuseremail"
+        android:layout_alignRight="@id/editTextuseremail"
+        android:layout_below="@id/editTextpass"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="#ff4e00"
+            android:text="登  录"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/forgetPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColorLink="@color/core_color"
+            android:text="忘记密码？"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/other_tip_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_below="@id/login_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60.0dip"
+            android:layout_height="1.0dip"
+            android:background="#8d8d8d"
+            android:text=""
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="其他方式登录"
+            android:textColor="#969696" />
+
+        <TextView
+            android:layout_width="60.0dip"
+            android:layout_height="1.0dip"
+            android:background="#8d8d8d"
+            android:text=""/>
+<!--             android:textColor="?text_color_gray"  -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/other_tip_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/weibo_login"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/login_weibo" />
+
+        <ImageView
+            android:id="@id/weixin_login"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/login_weixin"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@id/qq_login"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/login_qq" />
+    </LinearLayout>
+
+
+</RelativeLayout>

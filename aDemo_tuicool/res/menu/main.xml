@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appv7="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sample.MainActivity" >
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        appv7:actionViewClass="android.support.v7.widget.SearchView"
+        appv7:showAsAction="always"/>
+    <item
+        android:id="@+id/action_more_menu"
+        android:orderInCategory="200"
+        android:title=""
+        android:icon="@drawable/ic_home_menu_moreoverflow_mtrl_alpha"
+        appv7:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_only_chinese"
+                android:title="仅中文"
+                appv7:showAsAction="always">
+            </item>
+            <item
+                android:id="@+id/action_only_english"
+                android:title="仅英文"
+                appv7:showAsAction="always">
+            </item>
+            <item
+                android:id="@+id/action_cn_or_us"
+                android:title="中英混合"
+                appv7:showAsAction="always">
+            </item>
+                        <item
+                android:id="@+id/action_tuijian_setting"
+                android:title="推荐设置"
+                appv7:showAsAction="always">
+            </item>
+                        <item
+                android:id="@+id/action_dingzhi_pindao"
+                android:title="定制频道"
+                appv7:showAsAction="always">
+            </item>
+                        <item
+                android:id="@+id/action_a_week_read"
+                android:title="一周拾遗"
+                appv7:showAsAction="always">
+            </item>
+        </menu>
+    </item>
+
+</menu>

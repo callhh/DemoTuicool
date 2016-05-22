@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="left_menu_icon">
+        <item>@drawable/left_article_selected</item>
+        <item>@drawable/left_cang</item>
+        <item>@drawable/left_site</item>
+        <item>@drawable/left_mag</item>
+        <item>@drawable/left_offline</item>
+        <item>@drawable/left_night_night</item>
+        <item>@drawable/left_setting</item>
+    </string-array>
+    <string-array name="left_menu">
+        <item>首页</item>
+        <item>站点</item>
+        <item>主题</item>
+        <item>周刊</item>
+        <item>我的</item>
+      
+    </string-array>
+      <string-array name="left_menuimgs">
+        <item>@drawable/left_article_selected</item>
+        <item>@drawable/left_cang</item>
+        <item>@drawable/left_site</item>
+        <item>@drawable/left_mag</item>
+        <item>@drawable/left_offline</item>
+    </string-array>
+    <string-array name="rec_cats">
+        <item>推荐文章</item>
+        <item>科技资讯</item>
+        <item>投资创业</item>
+        <item>手机数码</item>
+        <item>程序技术</item>
+        <item>产品设计</item>
+        <item>营销推广</item>
+    </string-array>
+    <string-array name="download_nums">
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="weekly_items">
+        <item>应用内提醒</item>
+        <item>消息推送</item>
+        <item>不做提醒</item>
+    </string-array>
+    <string-array name="font_sizes">
+        <item>最小</item>
+        <item>偏小</item>
+        <item>中等</item>
+        <item>偏大</item>
+        <item>最大</item>
+    </string-array>
+    <string-array name="source_sort_type">
+        <item>我的排序</item>
+        <item>更新时间</item>
+        <item>订阅时间</item>
+    </string-array>
+    <string-array name="offline_manage">
+        <item>一周前的</item>
+        <item>两周前的</item>
+        <item>一月前的</item>
+        <item>删除全部</item>
+        <item>规则说明</item>
+    </string-array>
+    <string-array name="discovery_items_unlogin">
+        <item>热门文章</item>
+        <item>最新文章</item>
+    </string-array>
+    <string-array name="email_types">
+        <item>\@邮箱后缀</item>
+        <item>\@gmail.com</item>
+        <item>\@qq.com</item>
+        <item>\@163.com</item>
+        <item>\@126.com</item>
+        <item>\@sina.com</item>
+        <item>\@vip.sina.com</item>
+        <item>\@sina.cn</item>
+        <item>\@sohu.com</item>
+        <item>\@hotmail.com</item>
+        <item>\@139.com</item>
+    </string-array>
+    <string-array name="app_share_items">
+        <item>新浪微博</item>
+        <item>QQ空间</item>
+        <item>微信好友</item>
+        <item>朋友圈</item>
+    </string-array>
+    <string-array name="rec_lang_ratios">
+        <item>仅中文</item>
+        <item>仅英文</item>
+        <item>中文为主</item>
+        <item>英文为主</item>
+        <item>中英混合</item>
+    </string-array>
+    <string-array name="article_menu_array">
+        <item>推荐</item>
+        <item>精华</item>
+        <item>逛逛</item>
+        <item>收藏</item>
+        <item>待读</item>
+    </string-array>
+
+    <!-- Used in app/dialog examples -->
+    <string-array name="select_dialog_items">
+        <item>　最小</item>
+        <item>　偏小</item>
+        <item>　中等</item>
+        <item>　偏大</item>
+        <item>　最大</item>
+    </string-array>
+    <!-- Used in settings activity qiuRenTongGan /dialog -->
+    <string-array name="select_dialog_items_qiu_rentong">
+        <item>没有应用可执行此操作。</item>
+    </string-array>
+
+    
+</resources>

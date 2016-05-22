@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="?attr/src_other_activity_bg"
+    tools:context="com.example.tuicool.OffLineReadActivity" >
+
+      <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:id="@+id/offline_download_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <TextView
+                android:id="@+id/sep"
+                android:layout_width="2.0dip"
+                android:layout_height="20.0sp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/core_color" />
+
+            <TextView
+                android:id="@+id/check_all_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/sep"
+                android:text="已下载的频道"
+                android:textColor="?attr/text_article_title"
+                android:textSize="14sp" />
+
+<!--             <TextView -->
+<!--                 android:id="@+id/manage" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="fill_parent" -->
+<!--                 android:layout_alignParentRight="true" -->
+<!--                 android:paddingLeft="20.0dip" -->
+<!--                 android:paddingRight="5.0dip" -->
+<!--                 android:text="管理下载" -->
+<!--                 android:textColor="@color/core_color" -->
+<!--                 android:textSize="14.0sp" /> -->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="#969696" />
+
+        <LinearLayout
+            android:id="@+id/download_list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_offline_read_intro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:lineSpacingExtra="3.0dip"
+            android:singleLine="false"
+            android:textColor="?attr/text_article_title"
+            android:textSize="16.sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

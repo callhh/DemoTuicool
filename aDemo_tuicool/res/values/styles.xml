@@ -1,0 +1,70 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="list_selector_pre">#b4ebff</drawable>
+    <drawable name="list_selector_state">#e8e8e8</drawable>
+
+    <style name="AlertDialogCustom">
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- App light model -->
+    <style name="light" parent="Theme.AppCompat.Light">
+        <item name="src_dawerHeaderView">@drawable/left_head_1</item>
+        <item name="src_ic_about_us">@drawable/logo_trans</item>
+        <item name="src_toolbar_bg">@color/src_toolbar_bg_light</item>
+        <item name="src_cardview_bg">@color/cardview_bg_light</item>
+        <item name="src_drawerList_bg">@color/src_drawerList_bg_light</item>
+        <item name="src_SmartTabLayout">@color/src_SmartTabLayout_light</item>
+        <item name="src_PagerSlidingTabStrip">@color/src_PagerSlidingTabStrip_light</item>
+        <item name="src_LinearLayout_bg">@color/src_LinearLayout_bg_light</item>
+        <item name="src_other_activity_bg">@color/src_other_activity_bg_light</item>
+        
+        <item name="text_article_title">@color/text_title_color_detail_light</item>
+        <item name="text_article_subtitle">@color/text_subtitle_color_detail_light</item>
+    </style>
+    <!-- App night model -->
+    <style name="night" parent="Theme.AppCompat">
+        <item name="src_dawerHeaderView">@drawable/left_head_2</item>
+        <item name="src_ic_about_us">@drawable/logo_trans_night</item>
+        <item name="src_toolbar_bg">@color/src_toolbar_bg_night</item>
+        <item name="src_cardview_bg">@color/cardview_bg_night</item>
+        <item name="src_drawerList_bg">@color/src_drawerList_bg_night</item>
+        <item name="src_SmartTabLayout">@color/src_SmartTabLayout_night</item>
+        <item name="src_PagerSlidingTabStrip">@color/src_PagerSlidingTabStrip_night</item>
+        <item name="src_LinearLayout_bg">@color/src_LinearLayout_bg_night</item>
+        <item name="src_other_activity_bg">@color/src_other_activity_bg_night</item>
+        
+        <item name="text_article_title">@color/text_title_color_detail_night</item>
+        <item name="text_article_subtitle">@color/text_subtitle_color_detail_night</item>
+    </style>
+    
+    <!-- WelcomeHeading text size and color -->
+    <style name="WelcomeHeadingAppearance" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/welcome_heading</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WelcomeContentAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/welcome_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

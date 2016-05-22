@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/src_other_activity_bg"
+    tools:context="com.example.tuicool.UpgradeLogActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ListView
+        android:id="@+id/listView_upgrade_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

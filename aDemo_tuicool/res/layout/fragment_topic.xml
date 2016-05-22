@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.example.fragment.TopicFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:divider="#00000000"
+        android:background="?attr/src_other_activity_bg"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+</RelativeLayout>

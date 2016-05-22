@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sample.LoginActivity" >
+
+    <item
+        android:id="@+id/action_regist"
+        android:icon="@drawable/actionbar_email_register"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always"/>
+
+</menu>

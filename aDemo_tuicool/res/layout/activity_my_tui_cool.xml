@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tuicool.MyTuiCoolActivity" >
+
+    <include
+        android:id="@+id/tuicool_toolbar"
+        layout="@layout/toolbar" />
+    
+    <RelativeLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tuicool_toolbar"
+        android:background="?attr/src_other_activity_bg"
+        android:padding="12dp"
+        android:paddingTop="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1_login"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="?attr/src_LinearLayout_bg" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:src="@drawable/menu_user" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="点击登录"
+                android:textColor="?attr/text_article_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/pointer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2_waitRead"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/relativeLayout1_login"
+            android:layout_marginTop="8dp"
+            android:background="?attr/src_LinearLayout_bg" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/offline_added" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="我的待读"
+                android:textColor="?attr/text_article_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/pointer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3_myFavor"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/relativeLayout2_waitRead"
+            android:layout_marginTop="3dp"
+            android:background="?attr/src_LinearLayout_bg" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/username" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView5"
+                android:text="我的收藏"
+                android:textColor="?attr/text_article_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/pointer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4_myTuiKan"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/relativeLayout3_myFavor"
+            android:layout_marginTop="3dp"
+            android:background="?attr/src_LinearLayout_bg" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/my_kan" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/imageView7"
+                android:text="我的推刊"
+                android:textColor="?attr/text_article_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/pointer" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/src_other_activity_bg"
+    tools:context="com.example.tuicool.TiJiaoFanKuiActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/ed_tijiao_fankui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="6dp"
+        android:gravity="top"
+        android:autoLink="web"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="请输入反馈的信息" />
+
+</RelativeLayout>

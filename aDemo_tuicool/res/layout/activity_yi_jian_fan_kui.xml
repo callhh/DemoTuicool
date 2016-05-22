@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/src_other_activity_bg"
+    tools:context="com.example.tuicool.YiJianFanKuiActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@id/umeng_fb_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="使用说明：如果程序有闪退或者需要截图说明问题，可以发邮件到 biz@tuicool.com。 你的吐槽和鼓励都会帮助我们更好的成长。"
+                android:textColor="?attr/text_article_title"
+                android:textSize="14.0sp" />
+
+            <ListView
+                android:id="@+id/listview_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/umeng_fb_reply_content_wrapper"
+                android:layout_below="@id/umeng_fb_intro"
+                android:layout_marginTop="10.0dip"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:choiceMode="none"
+                android:divider="@null"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:transcriptMode="alwaysScroll" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|right"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="24dp"
+            android:background="#ff4e00"
+            materialdesign:animate="true"
+            materialdesign:iconDrawable="@drawable/ic_float_actionbutton_edit" />
+    </FrameLayout>
+
+</RelativeLayout>

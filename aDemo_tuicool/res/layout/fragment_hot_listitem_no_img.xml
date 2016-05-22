@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/src_drawerList_bg"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp" xmlns:app="http://schemas.android.com/apk/res/com.example.sample">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="?attr/src_cardview_bg"
+        android:clickable="false" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" 
+            android:minHeight="70dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="Large Text"
+                android:textColor="?attr/text_article_title"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_From"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_Title"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/tv_Title"
+                android:text="TextView"
+                android:textColor="?attr/text_article_subtitle"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_From"
+                android:layout_alignBottom="@+id/tv_From"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:text="TextView"
+                android:textColor="?attr/text_article_subtitle"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
